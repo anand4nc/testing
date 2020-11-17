@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\anar1\Documents\bitbucket\testing\__tests__\filterTerm.spec.js">
-    <testCase name="Filter function it should filter by a search term (link)" duration="3"/>
-    <testCase name="Code Smell should return 5" duration="0"/>
+    <testCase name="Filter function it should filter by a search term (link)" duration="8"/>
+    <testCase name="Code Smell should return 5" duration="1"/>
   </file>
 </testExecutions>

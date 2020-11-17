@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1605626376158" clover="3.2.0">
-  <project timestamp="1605626376158" name="All files">
+<coverage generated="1605627219868" clover="3.2.0">
+  <project timestamp="1605627219869" name="All files">
     <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3" elements="17" coveredelements="14" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
     <file name="filterByTerm.js" path="C:\Users\anar1\Documents\bitbucket\testing\filterByTerm.js">
       <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>

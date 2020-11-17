@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/anand4nc/testing/issues"
   },
-  "jest": {
+    "jest": {
     "collectCoverage": true,
     "testResultsProcessor": "jest-sonar-reporter"
   },

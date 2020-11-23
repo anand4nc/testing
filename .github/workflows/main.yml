@@ -23,9 +23,9 @@ jobs:
       - run: npm run testWithCoverage
       - run: ls
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-action@v1.4
         with:
-          args:
+          args: |
             sonar.projectKey: "anand4nc_testing_feature" 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any

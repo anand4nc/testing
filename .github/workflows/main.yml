@@ -2,7 +2,8 @@ name: Build
 on:
   push:
     branches:
-      - master
+      #- master
+      - feature
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
@@ -21,8 +22,12 @@ jobs:
       - run: npm run test
       - run: npm run testWithCoverage
       - run: ls
+      - run: curl -v -X POST https://${{ secrets.SONAR_ROOT_TOKEN }}@sonarcloud.io/api/projects/create -d "name=anand4nc_testing_feature1&project=anand4nc_testing_feature1&organization=anand4nc"
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-action@v1.4
+        with:
+          args: >
+            -Dsonar.projectKey=anand4nc_testing_feature1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

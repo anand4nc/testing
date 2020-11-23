@@ -27,7 +27,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v1.4
         with:
           args: >
-            -Dsonar.projectKey="anand4nc_testing_feature" 
+            -Dsonar.projectKey=anand4nc_testing_feature
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

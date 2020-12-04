@@ -8,7 +8,7 @@ function filterByTerm(inputArr, searchTerm) {
   }
   
   const codeSmell = () => {
-      let a = 5;
+      let a = 4;
     return a;
   }
   

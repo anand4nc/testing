@@ -19,6 +19,7 @@ jobs:
         with:
          node-version: 12.13.0
       - run: npm install
+      - run: npm install -g jest
       - run: npm run test
       - run: ls
       - run: | 
